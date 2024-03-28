@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad( ) {
         super.viewDidLoad()
         
-        let nib = UINib (nibName: todoTableViewCell.identifier, bundle: nil)
-        tableView.register(nib,forCellReuseIdentifier:todoTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -68,10 +66,24 @@ extension ViewController: UITableViewDataSource{
 
         // 테이블 뷰의 셀을 구성하는 역할
         cell.setData(TodoVO.todoSources[indexPath.row])
-        cell.isCompletedSwitch.tag = indexPath.row
+        cell.isCompletedSwitch?.tag = indexPath.row  // 각 셀의 UISwitch를 tag로 구분
         return cell
     }
-     
+    
+    @IBAction func actionSwitch(_ sender: UISwitch) {
+        
+        TodoVO.todoSources[sender.tag].iscompleted = sender.isOn
+        //         print(sender.tag)
+        
+        if sender.isOn {
+            TodoVO.todoSources[sender.tag].iscompleted = true // 스위치가 on 되면 소스 데이터의 iscompleted도 true 값이 되도록 설정함
+            self.tableView.reloadData()
+        } else {
+            TodoVO.todoSources[sender.tag].iscompleted = false // 스위치가 off 되면 소스 데이터의 iscompleted도 false 값이 되도록 설정함
+            self.tableView.reloadData()
+        }
+    }
+    
 }
 
     

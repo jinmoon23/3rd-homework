@@ -15,7 +15,6 @@
 		CEA06BC02BB27F9E0036A95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA06BBE2BB27F9E0036A95C /* LaunchScreen.storyboard */; };
 		CEA06BC82BB27FF80036A95C /* TodoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA06BC72BB27FF80036A95C /* TodoVO.swift */; };
 		CEA06BD12BB2863E0036A95C /* todoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA06BCF2BB2863E0036A95C /* todoTableViewCell.swift */; };
-		CEA06BD22BB2863E0036A95C /* todoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA06BD02BB2863E0036A95C /* todoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		CEA06BC12BB27F9E0036A95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA06BC72BB27FF80036A95C /* TodoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVO.swift; sourceTree = "<group>"; };
 		CEA06BCF2BB2863E0036A95C /* todoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTableViewCell.swift; sourceTree = "<group>"; };
-		CEA06BD02BB2863E0036A95C /* todoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = todoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				CEA06BB72BB27F9A0036A95C /* ViewController.swift */,
 				CEA06BCF2BB2863E0036A95C /* todoTableViewCell.swift */,
 				CEA06BB92BB27F9A0036A95C /* Main.storyboard */,
-				CEA06BD02BB2863E0036A95C /* todoTableViewCell.xib */,
 				CEA06BBE2BB27F9E0036A95C /* LaunchScreen.storyboard */,
 				CEA06BBC2BB27F9E0036A95C /* Assets.xcassets */,
 				CEA06BC12BB27F9E0036A95C /* Info.plist */,
@@ -137,7 +134,6 @@
 				CEA06BC02BB27F9E0036A95C /* LaunchScreen.storyboard in Resources */,
 				CEA06BBD2BB27F9E0036A95C /* Assets.xcassets in Resources */,
 				CEA06BBB2BB27F9A0036A95C /* Main.storyboard in Resources */,
-				CEA06BD22BB2863E0036A95C /* todoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
