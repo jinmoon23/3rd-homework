@@ -22,6 +22,7 @@ extension TodoVO {
     TodoVO(todo: "오른쪽 상단 추가하기 버튼을 클릭해주세요!", iscompleted: false)
   ]
 }
+
 extension String {
     func strikeThrough() -> NSAttributedString {
         let attributeString = NSMutableAttributedString(string: self)
@@ -34,6 +35,7 @@ extension String {
            return attributeString
        }
 }
+
 extension NSMutableAttributedString {
     func removeStrikethrough() {
         removeAttribute(NSAttributedString.Key.strikethroughStyle, range: NSMakeRange(0, length))
